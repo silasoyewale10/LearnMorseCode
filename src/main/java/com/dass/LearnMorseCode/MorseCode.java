@@ -67,7 +67,6 @@ public class MorseCode {
 
         for (int i =0; i<charArray.length;i++){
             if (! dictionary.containsKey(charArray[i])){
-                System.out.println(charArray[i]);
                 throw new IllegalArgumentException();
             }
             String english=dictionary.get(charArray[i]);
@@ -81,15 +80,6 @@ public class MorseCode {
 
     }
 
-//    public String morseToEnglishSentence(String sentence){
-//        String[] sentenceArray=sentence.split("/");
-//        StringBuilder result= new StringBuilder();
-//        for (String morse:sentenceArray){
-//            result.append(morseToEnglish(morse));
-//        }
-//        return result.toString();
-//
-//    }
 }
 
 
